@@ -14,7 +14,7 @@ describe('My second test', function() {
 describe('My third test', function() {
 
     it('Opens Visit website and finds the content "type" and navigate to new page', function() {
-        cy.visit('https://example.cypress.io');
+        cy.visit('/');
 
         //cy.pause();
 
@@ -35,7 +35,7 @@ describe('My third test', function() {
 describe('My other test', function() {
 
     it('Opens Visit website and finds the content "type" and navigate to new page', function() {
-        cy.visit('https://example.cypress.io');
+        cy.visit('/');
         cy.contains('type').click();
 
         cy.get('.btn.btn-primary').contains('Submit').then(($btn) => {
@@ -58,7 +58,7 @@ describe.skip('Local webpage loads', () => {
     }) 
 
     it('should load the page', () => {
-        cy.visit('/');
+        cy.visit('http://localhost:3000/');
     })
 }) 
 
