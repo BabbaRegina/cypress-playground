@@ -6,7 +6,8 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "cypress:open": "cypress open",
-    "server:start": "node .\"app.js"
+    "server:start": "node .\"app.js",
+    "cypress:run:record": "cypress run --record -k 7b765af4-4420-4ed0-a3cb-713c276c8648"
   },
   "author": "Irene",
   "license": "ISC",
